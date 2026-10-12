@@ -5,8 +5,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 model_name = "facebook/nllb-200-distilled-600M"
 model_folder = "model/" + model_name.replace("/","_")
 
-tokenizer = AutoTokenizer.from_pretrained(model_folder)
-model = AutoModelForSeq2SeqLM.from_pretrained(model_folder)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model.eval()
 _lock = threading.Lock()
 
