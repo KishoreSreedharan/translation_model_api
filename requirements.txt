@@ -1,8 +1,8 @@
 
 fastapi
 uvicorn[standard]
-# torch /// torch for the translator local model
-# transformers
-# sentencepiece
-# sacremoses
+torch 
+transformers
+sentencepiece
+sacremoses
 google-genai 
